@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+code {
+    white-space: pre;
+}
+
+h1, h5 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+textarea {
+    height: 90vh;
+    width: 80%;
+}
+
+.main {
+    padding: 100px;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.sidebar {
+    background-color: #F4F4F4;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 5px;
+}
+
+.form-control {
+    width: 70%;
+}
+
+.tdl {
+    padding: 10px;
+}
+

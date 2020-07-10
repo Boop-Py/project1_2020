@@ -1,0 +1,23 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit Page
+{% endblock %}
+
+{% block body %}
+    <h1>Want to make a change to {{ title }}?</h1>   
+   
+<form action="{% url 'wiki:edit' title %}" method="POST","GET">
+    <div class="entryform">
+        {% csrf_token %} 
+        <textarea class="form-control" rows="10" name="edit_content" >          
+         {{ form_content }}   
+        </textarea>
+        <div class="col-auto my-1">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</form>
+
+    
+{% endblock %}
